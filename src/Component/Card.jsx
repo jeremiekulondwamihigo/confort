@@ -2,23 +2,89 @@ import React from "react";
 import { IoMailOutline, IoChevronForward, IoPieChart } from "react-icons/io5";
 import { IconContext } from "react-icons";
 import image1 from "../assets/images/logo.png";
+import { motion } from "framer-motion";
+
+let easeing = [0.6, -0.05, 0.01, 0.99];
+
+const container = {
+  show: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      ease: "easeInOut",
+      duration: 0.2,
+    },
+  },
+};
+const title = {
+  hidden: {
+    y: 60,
+    opacity: 1,
+    transition: {
+      delay: 0.2,
+      duration: 0.6,
+      ease: easeing,
+    },
+  },
+};
+const hoverEffect = {
+  whileHover: {
+    scale: 1.5,
+    rotate: 630,
+    borderRadius: "100%",
+  },
+};
 
 function Card() {
   return (
-    <div className="service_container">
+    <motion.div className="service_container">
       <div className="title_wrapper">
-        <span className="service-title">Our services</span>
-        <h2>
+        <motion.span
+          className="service-title"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5, delay: 1.8 }}
+        >
+          Our services
+        </motion.span>
+        <motion.h2
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5, delay: 1 }}
+        >
           Save Time Managing Social Media <br /> For your Business
-        </h2>
+        </motion.h2>
       </div>
-      <div className="service_card">
-        <div className="card">
-          <span className="service_icon" style={{ backgroundColor: "#ddfbf9" }}>
+      <motion.div
+        className="service_card"
+        variants={container}
+        initial="hidden"
+        exit="exit"
+        whileInView="show"
+        viewport={{ once: false }}
+      >
+        <motion.div className="card" variants={item}>
+          <motion.span
+            className="service_icon"
+            style={{ backgroundColor: "#ddfbf9" }}
+            variants={hoverEffect}
+            whileHover="whileHover"
+            whileTap="whileTap"
+          >
             <IconContext.Provider value={{ color: "#14da8f", size: "25px" }}>
               <IoMailOutline />
             </IconContext.Provider>
-          </span>
+          </motion.span>
           <h3>
             Ui/Ux Design <br /> For Mobile & Web
           </h3>
@@ -28,13 +94,19 @@ function Card() {
               <IoChevronForward />
             </IconContext.Provider>
           </a>
-        </div>
-        <div className="card">
-          <span className="service_icon" style={{ backgroundColor: "#e7daf8" }}>
+        </motion.div>
+        <motion.div className="card" variants={item}>
+          <motion.span
+            className="service_icon"
+            style={{ backgroundColor: "#e7daf8" }}
+            variants={hoverEffect}
+            whileHover="whileHover"
+            whileTap="whileTap"
+          >
             <IconContext.Provider value={{ color: "#5700cf", size: "22px" }}>
               <IoMailOutline />
             </IconContext.Provider>
-          </span>
+          </motion.span>
           <h3>
             Ui/Ux Design <br /> For Mobile & Web
           </h3>
@@ -44,13 +116,19 @@ function Card() {
               <IoChevronForward />
             </IconContext.Provider>
           </a>
-        </div>
-        <div className="card">
-          <span className="service_icon" style={{ backgroundColor: "#ffede6" }}>
+        </motion.div>
+        <motion.div className="card" variants={item}>
+          <motion.span
+            className="service_icon"
+            style={{ backgroundColor: "#ffede6" }}
+            variants={hoverEffect}
+            whileHover="whileHover"
+            whileTap="whileTap"
+          >
             <IconContext.Provider value={{ color: "#ff8559", size: "22px" }}>
               <IoMailOutline />
             </IconContext.Provider>
-          </span>
+          </motion.span>
           <h3>
             Ui/Ux Design <br /> For Mobile & Web
           </h3>
@@ -60,13 +138,19 @@ function Card() {
               <IoChevronForward />
             </IconContext.Provider>
           </a>
-        </div>
-        <div className="card">
-          <span className="service_icon" style={{ backgroundColor: "#ffe1e9" }}>
-            <IconContext.Provider value={{ color: "#fa3970", size: "25px" }}>
+        </motion.div>
+        <motion.div className="card" variants={item}>
+          <motion.span
+            className="service_icon"
+            style={{ backgroundColor: "#ffe1e9" }}
+            variants={hoverEffect}
+            whileHover="whileHover"
+            whileTap="whileTap"
+          >
+            <IconContext.Provider value={{ color: "#fa3970", size: "22px" }}>
               <IoMailOutline />
             </IconContext.Provider>
-          </span>
+          </motion.span>
           <h3>
             Ui/Ux Design <br /> For Mobile & Web
           </h3>
@@ -76,13 +160,19 @@ function Card() {
               <IoChevronForward />
             </IconContext.Provider>
           </a>
-        </div>
-        <div className="card">
-          <span className="service_icon" style={{ backgroundColor: "#dcedff" }}>
+        </motion.div>
+        <motion.div className="card" variants={item}>
+          <motion.span
+            className="service_icon"
+            style={{ backgroundColor: "#dcedff" }}
+            variants={hoverEffect}
+            whileHover="whileHover"
+            whileTap="whileTap"
+          >
             <IconContext.Provider value={{ color: "#56a8f4", size: "22px" }}>
               <IoMailOutline />
             </IconContext.Provider>
-          </span>
+          </motion.span>
           <h3>
             Ui/Ux Design <br /> For Mobile & Web
           </h3>
@@ -92,13 +182,19 @@ function Card() {
               <IoChevronForward />
             </IconContext.Provider>
           </a>
-        </div>
-        <div className="card">
-          <span className="service_icon" style={{ backgroundColor: "#dbf9ed" }}>
+        </motion.div>
+        <motion.div className="card" variants={item}>
+          <motion.span
+            className="service_icon"
+            style={{ backgroundColor: "#dbf9ed" }}
+            variants={hoverEffect}
+            whileHover="whileHover"
+            whileTap="whileTap"
+          >
             <IconContext.Provider value={{ color: "#06d786", size: "22px" }}>
               <IoMailOutline />
             </IconContext.Provider>
-          </span>
+          </motion.span>
           <h3>
             Ui/Ux Design <br /> For Mobile & Web
           </h3>
@@ -108,13 +204,19 @@ function Card() {
               <IoChevronForward />
             </IconContext.Provider>
           </a>
-        </div>
-        <div className="card">
-          <span className="service_icon" style={{ backgroundColor: "#fffada" }}>
+        </motion.div>
+        <motion.div className="card" variants={item}>
+          <motion.span
+            className="service_icon"
+            style={{ backgroundColor: "#fffada" }}
+            variants={hoverEffect}
+            whileHover="whileHover"
+            whileTap="whileTap"
+          >
             <IconContext.Provider value={{ color: "#f1df11", size: "22px" }}>
               <IoMailOutline />
             </IconContext.Provider>
-          </span>
+          </motion.span>
           <h3>
             Ui/Ux Design <br /> For Mobile & Web
           </h3>
@@ -124,24 +226,27 @@ function Card() {
               <IoChevronForward />
             </IconContext.Provider>
           </a>
-        </div>
-        <div className="card dark">
+        </motion.div>
+        <motion.div className="card dark" variants={item}>
           <img src={image1} alt="imageb" className="line" />
           <h2>
             +4 <br />
             More...
           </h2>
-          <span className="service_icon" style={{ backgroundColor: "#dbf9ed" }}>
+          <motion.span
+            className="service_icon"
+            style={{ backgroundColor: "#dbf9ed" }}
+            variants={hoverEffect}
+            whileHover="whileHover"
+            whileTap="whileTap"
+          >
             <IconContext.Provider value={{ color: "#06d786", size: "22px" }}>
               <IoPieChart />
             </IconContext.Provider>
-          </span>
-
-          
-        </div>
-        
-      </div>
-    </div>
+          </motion.span>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }
 

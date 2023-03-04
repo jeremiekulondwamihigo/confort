@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-$light_green: #effffa;
+$light_green: #1E1E1E;
 $dark_green: #14da8f;
 $black: #000;
 $white: #fff;
@@ -25,57 +25,64 @@ header {
   @extend .dflex;
   justify-content: space-between;
   padding: 0 13%;
+  background-color: $light_green;
+  color: $white;
   height: 120px;
   .logo-wrapper {
     font-size: 32px;
     font-weight: 600;
     span {
-      color: $dark_green;
+      color: $white;
     }
   }
   .menu_container {
     @extend .dflex;
     justify-content: flex-end;
-    width: 600px;
+    width: 1000px;
     height: 56px;
     span {
       display: inline-flex;
       align-items: center;
-      justify-content: flex-start;
+      justify-content: flex-end;
       position: relative;
       height: 100%;
       + span {
         &:before {
           content: "";
           position: absolute;
-          width: 2px;
+          width: 0px;
           height: 50%;
           background-color: #bdbdbd;
-          left: -36px;
           top: 50%;
           transform: translateY(-50%);
         }
       }
-      .icon {
-        display: inline-flex;
-        + .icon {
-          margin-left: 20px;
-        }
-      }
+      
       &:nth-child(1) {
-        width: 22%;
+        width: 8%;
+        text-align: center;
       }
       &:nth-child(2) {
-        width: 42%;
+        width: 9%;
+      }
+      &:nth-child(3) {
+        width: 8%;
+      }
+      &:nth-child(4) {
+        width: 10%;
+      }
+      &:nth-child(5) {
+        width: 8%;
         .icon {
           margin-right: 20px;
         }
       }
       &.menu {
         @extend .dflex;
-        width: 56px;
+        width: 140px;
         height: 56px;
-        background-color: $dark_green;
+        margin-left: 50px;
+        background-color: #AD0101;
         color: $white;
         border-radius: 8px;
         cursor: pointer;
@@ -102,14 +109,14 @@ header {
   }
 }
 .content_wrapper {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   @extend .dflex;
   justify-content: space-between;
   align-items: center;
   background-color: $light_green;
   clip-path: polygon(0, 0, 100% 0, 100% 90%, 0 100%);
-  border-radius: 16px;
+  
   padding: 3%;
   .left_content_wrapper {
     width: 48%;
@@ -256,44 +263,44 @@ header {
         right: 3.8vw;
         width: 4.5vw;
       }
-      h2 {
+      h2{
         color: $white;
         text-align: left;
       }
-      a {
+      a{
         display: flex;
         justify-content: space-between;
       }
     }
-    .service_icon {
-      width: 3.02vw;
-      height: 3.02vw;
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $dark_green;
-      color: $white;
-      border-radius: 8px;
+    .service_icon{
+        width: 3.02vw;
+        height: 3.02vw;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $dark_green;
+        color: $white;
+        border-radius: 8px;
     }
-    h3 {
-      font-size: 1.15vw;
-      font-weight: 600;
-      color: $black;
-      text-transform: capitalize;
+    h3{
+        font-size: 1.15vw;
+        font-weight: 600;
+        color: $black;
+        text-transform: capitalize;
     }
-    a {
-      display: inline-flex;
-      justify-content: flex-start;
-      font-size: 0.94vw;
-      color: $dark_green;
-      text-decoration: none;
-      align-items: center;
-      span {
-        margin-right: 8px;
-      }
-      svg {
-        margin-top: 3px;
-      }
+    a{
+        display: inline-flex;
+        justify-content: flex-start;
+        font-size: .94vw;
+        color: $dark_green;
+        text-decoration: none;
+        align-items: center;
+        span{
+            margin-right: 8px;
+        }
+        svg{
+            margin-top: 3px;
+        }
     }
   }
 }
