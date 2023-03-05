@@ -7,6 +7,8 @@ import Card from "./Component/Card";
 import image from "./assets/images/image2.png";
 import { motion } from "framer-motion";
 import CardOne from "./Component/CardOne";
+import Confor from "./Component/Confor";
+import Specialite from "./Component/Specialite";
 
 let easeing = [0.6, -0.05, 0.01, 0.99];
 
@@ -350,6 +352,7 @@ function App() {
       
       </motion.div>
         <CardOne/>
+        <Confor/>
       <Card />
     </motion.div>
   );

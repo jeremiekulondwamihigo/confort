@@ -3,6 +3,7 @@ import { IoMailOutline, IoChevronForward, IoPieChart } from "react-icons/io5";
 import { IconContext } from "react-icons";
 import image1 from "../assets/images/logo.png";
 import { motion } from "framer-motion";
+import Architect from "../assets/icons/architect.png"
 
 let easeing = [0.6, -0.05, 0.01, 0.99];
 
@@ -47,22 +48,14 @@ function Card() {
   return (
     <motion.div className="service_container">
       <div className="title_wrapper">
-        <motion.span
-          className="service-title"
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.5, delay: 1.8 }}
-        >
-          Our services
-        </motion.span>
+      
         <motion.h2
           initial={{ y: 200, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, delay: 1 }}
         >
-          Save Time Managing Social Media <br /> For your Business
+          Nos Spécialités
         </motion.h2>
       </div>
       <motion.div
@@ -86,7 +79,9 @@ function Card() {
             </IconContext.Provider>
           </motion.span>
           <h3>
-            Ui/Ux Design <br /> For Mobile & Web
+          <p>Architecture​</p>
+          Editez facilement vos murs, plafonds, 
+          portes, fenêtres, et bien plus encore 
           </h3>
           <a href="#">
             <span>learn more</span>
@@ -108,7 +103,8 @@ function Card() {
             </IconContext.Provider>
           </motion.span>
           <h3>
-            Ui/Ux Design <br /> For Mobile & Web
+            <p>Conception de plan de vos maison</p>
+          Visualiser vos plan que vous avez trouvez à partir de notre société
           </h3>
           <a href="#">
             <span>learn more</span>
@@ -130,7 +126,8 @@ function Card() {
             </IconContext.Provider>
           </motion.span>
           <h3>
-            Ui/Ux Design <br /> For Mobile & Web
+            <p>Conception de paysage</p>
+          Nous contusion de paysage externe que interne de vos mason
           </h3>
           <a href="#">
             <span>learn more</span>
@@ -152,7 +149,10 @@ function Card() {
             </IconContext.Provider>
           </motion.span>
           <h3>
-            Ui/Ux Design <br /> For Mobile & Web
+            <p>Design interne</p>
+            un ensemble de meubles ou vos objets dans 
+            la vue 3D en un seul clic pour une visualisation 
+            immédiate du résultat !
           </h3>
           <a href="#">
             <span>learn more</span>
@@ -174,7 +174,10 @@ function Card() {
             </IconContext.Provider>
           </motion.span>
           <h3>
-            Ui/Ux Design <br /> For Mobile & Web
+            <p>Solution complète</p>
+            Démarrez un projet de construction, d’aménagement, 
+            de rénovation ou de décoration tant en intérieur 
+            qu’en extérieur à l'aide des Milliers des objets 3D fournis !
           </h3>
           <a href="#">
             <span>learn more</span>
@@ -196,7 +199,10 @@ function Card() {
             </IconContext.Provider>
           </motion.span>
           <h3>
-            Ui/Ux Design <br /> For Mobile & Web
+            <p>Conception des routes</p>
+            Nous faisons aussi de construction de vos route 
+            en tenant compte de la demande: comme la constriction
+        de route du déserte agricole
           </h3>
           <a href="#">
             <span>learn more</span>
@@ -205,46 +211,8 @@ function Card() {
             </IconContext.Provider>
           </a>
         </motion.div>
-        <motion.div className="card" variants={item}>
-          <motion.span
-            className="service_icon"
-            style={{ backgroundColor: "#fffada" }}
-            variants={hoverEffect}
-            whileHover="whileHover"
-            whileTap="whileTap"
-          >
-            <IconContext.Provider value={{ color: "#f1df11", size: "22px" }}>
-              <IoMailOutline />
-            </IconContext.Provider>
-          </motion.span>
-          <h3>
-            Ui/Ux Design <br /> For Mobile & Web
-          </h3>
-          <a href="#">
-            <span>learn more</span>
-            <IconContext.Provider value={{ color: "14da8f", size: "18px" }}>
-              <IoChevronForward />
-            </IconContext.Provider>
-          </a>
-        </motion.div>
-        <motion.div className="card dark" variants={item}>
-          <img src={image1} alt="imageb" className="line" />
-          <h2>
-            +4 <br />
-            More...
-          </h2>
-          <motion.span
-            className="service_icon"
-            style={{ backgroundColor: "#dbf9ed" }}
-            variants={hoverEffect}
-            whileHover="whileHover"
-            whileTap="whileTap"
-          >
-            <IconContext.Provider value={{ color: "#06d786", size: "22px" }}>
-              <IoPieChart />
-            </IconContext.Provider>
-          </motion.span>
-        </motion.div>
+        
+        
       </motion.div>
     </motion.div>
   );
