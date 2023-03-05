@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,500;1,900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -24,12 +25,12 @@ body {
 header {
   @extend .dflex;
   justify-content: space-between;
-  padding: 0 13%;
+  padding: 0 3%;
   background-color: $light_green;
   color: $white;
   height: 120px;
   .logo-wrapper {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 600;
     span {
       color: $white;
@@ -133,8 +134,9 @@ header {
       }
     }
     p {
-      font-size: 1.02vw;
-      color: #333;
+      font-size: 1.05vw;
+      color: #fff;
+
       margin: 20px 0 30px 0;
     }
     .btn_group {
@@ -205,9 +207,7 @@ header {
 .service_container {
   display: block;
   width: 100%;
-  
-  margin: 80px auto 0 auto;
-  padding: 10px;
+  margin: 0px auto 0 auto;
   .title_wrapper {
     overflow: hidden;
     .service-title {
@@ -237,9 +237,13 @@ header {
   flex-wrap: wrap;
   grid-gap: 1vw;
   justify-content: flex-start;
-  background-image: linear-gradient(to bottom, #0009, #0002), url("./assets/images/image.png");
+  background-image: linear-gradient(to bottom, #0008, #0009), url("./assets/images/image.png");
   margin: 60px 0;
-  padding: 80px 10px;
+  background-position:center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+  padding: 100px 10px;
   .card {
     display: flex;
     flex-direction: column;
@@ -247,11 +251,9 @@ header {
     width: calc(96% / 3);
     border: 1px solid #f0f0f0;
     border-radius: 8px;
-    // background-color: $white;
     background-color: rgba(255, 255, 255, 0.6);
     padding: 2.8vw 3.4vw;
     height: 16.67vw;
-    position: relative;
     top: 0;
     transition: all 0.3s ease-in-out;
     &:hover {
@@ -312,5 +314,3 @@ header {
     }
   }
 }
-
-//framer-motion animation
