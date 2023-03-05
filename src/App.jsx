@@ -304,7 +304,7 @@ function App() {
       <CardOne />
       <Confor />
       <Card />
-      <h2>Nos recents projets</h2>
+      <h2>Nos recents proj</h2>
       <Service/>
       <Footer/>
     </div>
