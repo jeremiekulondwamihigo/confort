@@ -205,7 +205,7 @@ header {
 .service_container {
   display: block;
   width: 100%;
-  background-image: linear-gradient(to bottom, #0009, #0002), url("./assets/images/image.png");
+  
   margin: 80px auto 0 auto;
   padding: 10px;
   .title_wrapper {
@@ -237,7 +237,9 @@ header {
   flex-wrap: wrap;
   grid-gap: 1vw;
   justify-content: flex-start;
+  background-image: linear-gradient(to bottom, #0009, #0002), url("./assets/images/image.png");
   margin: 60px 0;
+  padding: 80px 10px;
   .card {
     display: flex;
     flex-direction: column;
