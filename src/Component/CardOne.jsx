@@ -8,7 +8,10 @@ import personnel from "../assets/icons/personnel.png";
 
 function CardOne() {
   return (
+    <>
+    
     <div className="cardsecond">
+      
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-lg-4 col-sm-12 cardOne">
@@ -70,7 +73,10 @@ function CardOne() {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4 col-sm-12 cardOne" style={{marginTop:"11px"}}>
+          <div
+            className="col-md-6 col-lg-4 col-sm-12 cardOne"
+            style={{ marginTop: "11px" }}
+          >
             <div className="row">
               <div className="col-sm-12 col-lg-3 col-md-4 imagePersonne">
                 <img src={menuiserie} alt="menuiserie" />
@@ -86,7 +92,10 @@ function CardOne() {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4 col-sm-12 cardOne extraction" style={{marginTop:"11px"}}>
+          <div
+            className="col-md-6 col-lg-4 col-sm-12 cardOne extraction"
+            style={{ marginTop: "11px" }}
+          >
             <div className="row">
               <div className="col-sm-12 col-lg-3 col-md-4 imagePersonne">
                 <img src={architecture} alt="architecture" />
@@ -104,7 +113,10 @@ function CardOne() {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4 col-sm-12 cardOne fourniture" style={{marginTop:"11px"}}>
+          <div
+            className="col-md-6 col-lg-4 col-sm-12 cardOne fourniture"
+            style={{ marginTop: "11px" }}
+          >
             <div className="row">
               <div className="col-sm-12 col-lg-3 col-md-4 imagePersonne">
                 <img src={conseil} alt="conseil" />
@@ -115,9 +127,8 @@ function CardOne() {
                     <p>Conseil</p>
                   </div>
                   <p className="white">
-                  Vous rêvez de faire construire votre 
-maison ? Seulement voilà, entre le 
-choix du terrain.
+                    Vous rêvez de faire construire votre maison ? Seulement
+                    voilà, entre le choix du terrain.
                   </p>
                 </div>
               </div>
@@ -126,6 +137,7 @@ choix du terrain.
         </div>
       </div>
     </div>
+    </>
   );
 }
 

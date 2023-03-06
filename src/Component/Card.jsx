@@ -66,6 +66,9 @@ function Card() {
         whileInView="show"
         viewport={{ once: false }}
       >
+        <div>
+          
+        </div>
         <motion.div className="card" variants={item}>
           <motion.span
             className="service_icon"

@@ -17,8 +17,8 @@ function Confor() {
     pauseOnHover: true,
   };
   return (
-    <div className="confor card">
-     <div className="container-fluid">
+    <div className="confor">
+     <div className="container">
      <div className="row">
         <div className="col-md-6 col-lg-6 col-sm-12">
           <Slider {...settings}>

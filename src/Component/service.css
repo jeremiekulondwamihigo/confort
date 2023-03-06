@@ -1,14 +1,16 @@
 .bodyCard {
   width: 100%;
   height: 100%;
-  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+.cards{
+  margin-bottom: 20px;
+  position: relative;
+}
 .cards:hover .card-body {
-  right: 0;
+  display: block;
 }
 
 .cards-img {
@@ -20,11 +22,11 @@
 
 .card-body {
   width: 100%;
+  display: none;
   height: 30%;
   text-align: center;
   bottom: 0;
-  right: -100%;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   position: absolute;
   background: #0009;
   backdrop-filter: blur(5px);
@@ -64,8 +66,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #040429;
+  background-image:linear-gradient(to bottom,#040429, #0008 ), url("../assets/images/image1.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
+  margin-bottom: 20px;
 }
 .content-items {
   display: flex;
@@ -79,6 +85,7 @@
   padding: 0;
   text-align: center;
   font-size: 15px;
+  margin-top: 10px;
 }
 .item > div {
   width: 100%;
@@ -92,6 +99,7 @@
 .firstrow {
   background-color: #132e5e;
   margin-bottom: 32px;
+  width: 100vw;
 }
 .footer-title {
   font-style: normal;
@@ -191,4 +199,14 @@
   margin: 0px;
   padding: 5px;
   color: white;
+}
+.titleProjet{
+  color: #AD0101;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 67px;
+  text-transform: uppercase;
+}
+.services{
+  width: 100vw;
 }

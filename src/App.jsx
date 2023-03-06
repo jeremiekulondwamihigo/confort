@@ -77,7 +77,7 @@ const letter = {
   animate: {
     y: 0,
     transition: { duration: 1, ...transition },
-    fontSize: "67px",
+    fontSize: "50px",
   },
 };
 
@@ -129,7 +129,7 @@ const header = {
 
 function App() {
   return (
-    <div className="containerall">
+    <>
       <motion.div initial="initial" animate="animate" className="acceuil">
         <motion.header variants={stagger}>
           <motion.div className="logo-wrapper" variants={header}>
@@ -293,10 +293,10 @@ function App() {
       <CardOne />
       <Confor />
       <Card />
-      <h2>Nos recents proj</h2>
+      
       <Service/>
       <Footer/>
-    </div>
+    </>
   );
 }
 

@@ -55,7 +55,8 @@
 }
 .cardsecond {
   margin-top: 5px;
-  background-attachment: fixed;
+  position: relative;
+  width: 100vw;
 }
 .confor {
   margin-top: 50px;
