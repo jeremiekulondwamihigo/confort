@@ -1,7 +1,7 @@
 import React from "react";
 import Personne from "../assets/images/personne.png";
-import Personne2 from "../assets/images/Personne2.png";
-import Personne22 from "../assets/images/Personne22.png";
+import Personne2 from "../assets/images/personne2.png";
+import Personne22 from "../assets/images/personne22.png";
 import Slider from 'react-slick'
 
 function Personnel() {
