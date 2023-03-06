@@ -9,6 +9,7 @@ import CardOne from "./Component/CardOne";
 import Confor from "./Component/Confor";
 import Service from "./Component/Service";
 import Footer from "./Component/Footer";
+import Personnel from "./Component/Personnel";
 
 let easeing = [0.6, -0.05, 0.01, 0.99];
 
@@ -293,6 +294,7 @@ function App() {
       <CardOne />
       <Confor />
       <Card />
+      <Personnel/>
       
       <Service/>
       <Footer/>
