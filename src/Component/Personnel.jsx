@@ -28,6 +28,12 @@ function Personnel() {
       id: 1,
       title: "Card title",
       body: "This is a wider card with supporting text below as a natural= lead-in to additional content. This content is a little bitlonger.",
+      footer: "Last updated 3 mins ago", photo : Personne22
+    },
+    {
+      id: 1,
+      title: "Card title",
+      body: "This is a wider card with supporting text below as a natural= lead-in to additional content. This content is a little bitlonger.",
       footer: "Last updated 3 mins ago", photo : Personne
     },
     {
