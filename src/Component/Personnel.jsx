@@ -60,7 +60,7 @@ function Personnel() {
             return (
                 
               <div className="col-md-4 col-lg-3 col-sm-12 card-deck" key={key} >
-                <div className="card" style={{ width: "18rem", marginBottom:"12px" }}>
+                <div className="card" style={{ width: "18rem", margin:"10px" }}>
                   <img
                     className="card-img-top"
                     src={index.photo}
