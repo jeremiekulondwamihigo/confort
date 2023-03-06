@@ -47,10 +47,10 @@ function Personnel() {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000
+    autoplaySpeed: 3000
   };
   return (
     <>
@@ -59,8 +59,8 @@ function Personnel() {
           {item.map((index, key) => {
             return (
                 
-              <div className="col-md-4 col-lg-3 col-sm-12 card-deck" key={key} >
-                <div className="card" style={{ width: "18rem", margin:"10px" }}>
+              <div className="col-md-4 col-lg-3 col-sm-12 card-deck" key={key} style={{ marginRight:"10rem" }}>
+                <div className="card" style={{ width: "18rem"}}>
                   <img
                     className="card-img-top"
                     src={index.photo}
