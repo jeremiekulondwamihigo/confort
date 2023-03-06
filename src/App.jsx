@@ -1,7 +1,6 @@
 import "./App.scss";
 import "./Component/style.css";
-import { FaBehance, FaDribbble } from "react-icons/fa";
-import { IoMailOutline, IoChevronForwardCircle, IoStar } from "react-icons/io5";
+import { IoChevronForwardCircle, IoStar } from "react-icons/io5";
 import { IconContext } from "react-icons";
 import Card from "./Component/Card";
 import image from "./assets/images/image2.png";
@@ -9,7 +8,6 @@ import im from "./assets/images/im.png";
 import { motion } from "framer-motion";
 import CardOne from "./Component/CardOne";
 import Confor from "./Component/Confor";
-import Typical from "react-typical";
 import Service from "./Component/Service";
 import Footer from "./Component/Footer";
 
@@ -251,18 +249,10 @@ function App() {
               </motion.span>
             </motion.h2>
             <p style={{ color: "#fff" }}>
-              <Typical
-                loop={Infinity}
-                steps={[
-                  "CONFORT DE L’ART EST UNE ENTREPRISE OEUVRANT DANS LE DOMAINE D’IMMOBILIER",
-                  3000,
-
-                  "ET DE MOBILIERS QUI PRETE SES SERVICES A SA CLIENTELE DEPUIS JANVIER 2015",
-                  3000,
-                  "SA LEGALISATION A ÉTÉ EFFECTIVE DEPUIS JUIN 2021",
-                  3000,
-                ]}
-              />
+            CONFORT DE L’ART EST UNE ENTREPRISE OEUVRANT DANS LE DOMAINE D’IMMOBILIER
+            ET DE MOBILIERS QUI PRETE SES SERVICES A SA CLIENTELE DEPUIS JANVIER 2015
+            SA LEGALISATION A ÉTÉ EFFECTIVE DEPUIS JUIN 2021
+              
               <br />
             </p>
             <motion.div className="btn_group" variants={stagger}>
