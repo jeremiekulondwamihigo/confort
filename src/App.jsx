@@ -129,7 +129,7 @@ const header = {
 
 function App() {
   return (
-    <div>
+    <div className="containerall">
       <motion.div initial="initial" animate="animate" className="acceuil">
         <motion.header variants={stagger}>
           <motion.div className="logo-wrapper" variants={header}>

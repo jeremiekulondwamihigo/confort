@@ -3,7 +3,7 @@ import "./service.css";
 
 function Footer() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid footer">
       <div className="row firstrow">
         <div className="col-lg-6 col-md-6 col-sm-12">
           <h2 className="footer-title">
@@ -75,6 +75,10 @@ function Footer() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="row fin">
+    <p>© 2023 Confort de l'Art | Powered by Confort de l'Art</p>
+
       </div>
     </div>
   );
