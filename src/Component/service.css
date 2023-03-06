@@ -1,11 +1,11 @@
 .bodyCard {
   width: 100%;
   height: 100%;
-  background: #f3f5f5;
-  font-family: "roboto", sans-serif;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .cards {
   width: 320px;
@@ -96,9 +96,9 @@
 
 .firstrow {
   background-color: #132e5e;
+  margin-bottom: 32px;
 }
 .footer-title {
-  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
@@ -107,14 +107,85 @@
   margin-top: 107px;
   margin-left: 120px;
 }
-.subtitle{
-    font-family: 'Gilroy';
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 23px;
-color: white;
-margin-top: 55px;
-margin-left: 126px;
-margin-bottom: 154px;
+.subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+  margin-top: 55px;
+  margin-left: 126px;
+  margin-bottom: 154px;
 }
+.subtitleGauche {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+  margin-top: 55px;
+  margin-bottom: 31px;
+  margin-right: 262px;
+}
+.footer-titleGauche {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 60px;
+  color: white;
+  margin-top: 107px;
+}
+.message {
+  height: 51px;
+  width: 417px;
+  border-radius: 50px;
+  padding-left: 20px;
+  font-size: 17px;
+  border: none;
+}
+.message:hover{
+  border: white;
+}
+.message-div {
+  display: flex;
+}
+.message-div > button {
+  background-color: #ad0101;
+  padding: 10px 35px;
+  border-radius: 30px;
+  border: 0;
+  margin-left: 22px;
+  outline: 0;
+  color: white;
+  box-shadow: none;
+}
+.message-div > button:hover {
+  border: 0;
+}
+.footerclasse >h2{
+  color: #AD0101;
+  font-size: 42px;
+  
+  text-align: center;
+}
+.footerclasse>p{
+  text-align: justify;
+  margin-left: 60px;
+  margin-top: 28px;
+}
+.serviceFooter >h2{
+  color: #000;
+  font-size: 29px;
+  font-weight: 800;
+  text-align: center;
+}
+.serviceFooter >p{
+  color: #000;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+

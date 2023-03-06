@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,500;1,900&display=swap');
+    
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +22,7 @@ body {
   height: 100%;
   background-color: $white;
   overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
+  font-family: "Arial"!important;
 }
 header {
   @extend .dflex;
@@ -238,6 +240,7 @@ header {
   grid-gap: 1vw;
   justify-content: flex-start;
   background-image: linear-gradient(to bottom, #0008, #0009), url("./assets/images/image.png");
+  background-attachment: fixed;
   margin: 60px 0;
   background-position:center;
   background-repeat: no-repeat;

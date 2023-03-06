@@ -1,6 +1,6 @@
-.white{
-    color: #f1f5f9;
-    opacity: 0.6;
+.white {
+  color: #f1f5f9;
+  opacity: 0.6;
 }
 .personnel {
   background-color: red;
@@ -14,7 +14,6 @@
 }
 .cards .title > p {
   color: #040429;
-  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -31,17 +30,15 @@
 .title {
   margin-bottom: 13px;
   margin-top: 33px;
-  font-family: "Gilroy";
 }
 .fourniture {
   background: #ad0101;
 }
 .extraction {
-  background: #212146;;
+  background: #212146;
 }
 .cards .titlewhite > p {
   color: #fff;
-  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -51,45 +48,40 @@
   padding: 0;
 }
 .cards > p {
-  font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 96%;
 }
-.cardsecond{
-    margin-top: 5px;
+.cardsecond {
+  margin-top: 5px;
 }
-.confor{
-    margin-top: 50px;
-    padding: 10px;
+.confor {
+  margin-top: 50px;
+  padding: 10px;
 }
-.text{
-    width: 100%;
+.text {
+  width: 100%;
 }
-.text > img{
-    right: 20px;
-    width: 300px;
-    height: 200px;
-    margin-left: 19rem;
+.text > img {
+  right: 20px;
+  width: 300px;
+  height: 200px;
+  margin-left: 19rem;
 }
-.text >h3{
-
-font-family: 'Gilroy';
-font-style: normal;
-font-weight: 800;
-font-size: 40px;
-line-height: 96%;
-color: #040429;
+.text > h3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 96%;
+  color: #040429;
 }
 
-.text >p{
-    font-family: 'Gilroy';
-font-style: normal;
-font-weight: 300;
-font-size: 24px;
-line-height: 124%;
-margin-top: 20px;
-text-align: justify;
+.text > p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 124%;
+  margin-top: 20px;
+  text-align: justify;
 }
-

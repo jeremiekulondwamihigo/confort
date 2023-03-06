@@ -4,7 +4,6 @@ import { IoChevronForwardCircle, IoStar } from "react-icons/io5";
 import { IconContext } from "react-icons";
 import Card from "./Component/Card";
 import image from "./assets/images/image2.png";
-import im from "./assets/images/im.png";
 import { motion } from "framer-motion";
 import CardOne from "./Component/CardOne";
 import Confor from "./Component/Confor";
