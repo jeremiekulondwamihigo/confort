@@ -107,6 +107,15 @@
     margin-left: 10px!important;
     text-align: center!important;
   }
+  
+  .fin > p{
+    font-size:  10px!important;
+    margin-top: 5px;
+  }
+  .message-div > button{
+    margin-left: 10px!important;
+    padding: 10px 20px!important;
+  }
 }
 @media screen and (max-width: 450px) {
   .card {

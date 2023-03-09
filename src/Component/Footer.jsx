@@ -53,7 +53,7 @@ function Footer() {
           </div>
         </div>
         <div className="col-md-4 col-lg-3 col-sm-12">
-          <div className='serviceFooter'>
+          <div className="serviceFooter">
             <h2>Menu</h2>
             <p>Qui Sommes nous</p>
             <p>Faq</p>
@@ -62,7 +62,7 @@ function Footer() {
           </div>
         </div>
         <div className="col-md-4 col-lg-3 col-sm-12">
-          <div className='serviceFooter lastdiv'>
+          <div className="serviceFooter lastdiv">
             <h2>Contactez-nous</h2>
             <p>
               Blv JULIEN PALUKU,
@@ -77,8 +77,7 @@ function Footer() {
         </div>
       </div>
       <div className="row fin">
-    <p>© 2023 Confort de l'Art | Powered by Confort de l'Art</p>
-
+        <p>© 2023 Confort de l'Art | Powered by Confort de l'Art</p>
       </div>
     </div>
   );
