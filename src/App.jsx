@@ -1,4 +1,5 @@
 import "./App.scss";
+import "./index.css"
 import "./Component/style.css";
 import { IoChevronForwardCircle, IoStar } from "react-icons/io5";
 import { IconContext } from "react-icons";
@@ -10,6 +11,8 @@ import Confor from "./Component/Confor";
 import Service from "./Component/Service";
 import Footer from "./Component/Footer";
 import Personnel from "./Component/Personnel";
+import Slider from "react-slick";
+import casque from "./assets/images/casque.png"
 
 let easeing = [0.6, -0.05, 0.01, 0.99];
 
@@ -129,6 +132,14 @@ const header = {
 };
 
 function App() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000
+  };
   return (
     <>
       <motion.div initial="initial" animate="animate" className="acceuil">
@@ -142,7 +153,7 @@ function App() {
             <span>Projets</span>
             <span>Services</span>
             <span>Equipe</span>
-            <motion.span className="menu" variants={header}>
+            <motion.span className="menu" id="menu" variants={header}>
               Contactez-nous
             </motion.span>
           </motion.div>
@@ -257,37 +268,34 @@ function App() {
             </p>
             <motion.div className="btn_group" variants={stagger}>
               <motion.div
-                className="btn btn_primary"
+                className="btn btn_primary "
                 variants={btnGroup}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Hire Me
+                Contactez-nous
                 <IconContext.Provider
                   value={{ color: "#14da8f", size: "25px" }}
                 >
                   <IoChevronForwardCircle />
                 </IconContext.Provider>
               </motion.div>
-              <motion.div
-                className="btn btn_secondary"
-                variants={btnGroup}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Live Chat
-              </motion.div>
+           
             </motion.div>
            
           </div>
           <motion.div className="right_content_wrapper">
-            <motion.img
+          
+            
+              <motion.img
               src={image}
               alt="bg"
               initial={{ x: 200, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.8 }}
             />
+           
+            
           </motion.div>
         </motion.div>
       </motion.div>

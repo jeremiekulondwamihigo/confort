@@ -20,7 +20,7 @@ function Confor() {
     <div className="confor">
      <div className="container">
      <div className="row">
-        <div className="col-md-6 col-lg-6 col-sm-12">
+        <div className="col-xs-12 col-md-6 col-lg-6 col-sm-12">
           <Slider {...settings}>
             <div>
               <img src={confor} alt="Confor" />
@@ -33,7 +33,7 @@ function Confor() {
             </div>
           </Slider>
         </div>
-        <div className="col-md-6 col-lg-6 col-sm-12 text">
+        <div className="col-xs-12 col-md-6 col-lg-6 col-sm-12 text">
           <img src={casque} alt="casque" />
           <h3>CONFORT DE L’ART</h3>
           <p>Est une entreprise œuvrant dans le domaine d’immobilier et de 

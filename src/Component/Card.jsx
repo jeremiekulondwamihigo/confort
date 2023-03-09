@@ -46,7 +46,7 @@ const hoverEffect = {
 
 function Card() {
   return (
-    <motion.div className="service_container">
+    <motion.div className="service_container container">
       <div className="title_wrapper">
       
         <motion.h2
@@ -59,7 +59,7 @@ function Card() {
         </motion.h2>
       </div>
       <motion.div
-        className="service_card"
+        className="service_card row"
         variants={container}
         initial="hidden"
         exit="exit"
@@ -69,7 +69,7 @@ function Card() {
         <div>
           
         </div>
-        <motion.div className="card" variants={item}>
+        <motion.div className="col-md-6 col-sm-6 col-lg-4 card" variants={item}>
           <motion.span
             className="service_icon"
             style={{ backgroundColor: "#ddfbf9" }}
@@ -86,14 +86,9 @@ function Card() {
           Editez facilement vos murs, plafonds, 
           portes, fenêtres, et bien plus encore 
           </h3>
-          <a href="#">
-            <span>learn more</span>
-            <IconContext.Provider value={{ color: "14da8f", size: "18px" }}>
-              <IoChevronForward />
-            </IconContext.Provider>
-          </a>
+         
         </motion.div>
-        <motion.div className="card" variants={item}>
+        <motion.div className="col-md-6 col-sm-6 card" variants={item}>
           <motion.span
             className="service_icon"
             style={{ backgroundColor: "#e7daf8" }}
@@ -109,14 +104,9 @@ function Card() {
             <p>Conception de plan de vos maison</p>
           Visualiser vos plan que vous avez trouvez à partir de notre société
           </h3>
-          <a href="#">
-            <span>learn more</span>
-            <IconContext.Provider value={{ color: "14da8f", size: "18px" }}>
-              <IoChevronForward />
-            </IconContext.Provider>
-          </a>
+        
         </motion.div>
-        <motion.div className="card" variants={item}>
+        <motion.div className="col-md-6 col-sm-6 card" variants={item}>
           <motion.span
             className="service_icon"
             style={{ backgroundColor: "#ffede6" }}
@@ -132,14 +122,9 @@ function Card() {
             <p>Conception de paysage</p>
           Nous contusion de paysage externe que interne de vos mason
           </h3>
-          <a href="#">
-            <span>learn more</span>
-            <IconContext.Provider value={{ color: "14da8f", size: "18px" }}>
-              <IoChevronForward />
-            </IconContext.Provider>
-          </a>
+         
         </motion.div>
-        <motion.div className="card" variants={item}>
+        <motion.div className="col-md-6 col-sm-6 card" variants={item}>
           <motion.span
             className="service_icon"
             style={{ backgroundColor: "#ffe1e9" }}
@@ -157,14 +142,9 @@ function Card() {
             la vue 3D en un seul clic pour une visualisation 
             immédiate du résultat !
           </h3>
-          <a href="#">
-            <span>learn more</span>
-            <IconContext.Provider value={{ color: "14da8f", size: "18px" }}>
-              <IoChevronForward />
-            </IconContext.Provider>
-          </a>
+         
         </motion.div>
-        <motion.div className="card" variants={item}>
+        <motion.div className="col-md-6 col-sm-6 card" variants={item}>
           <motion.span
             className="service_icon"
             style={{ backgroundColor: "#dcedff" }}
@@ -180,16 +160,11 @@ function Card() {
             <p>Solution complète</p>
             Démarrez un projet de construction, d’aménagement, 
             de rénovation ou de décoration tant en intérieur 
-            qu’en extérieur à l'aide des Milliers des objets 3D fournis !
+            qu’en extérieur !
           </h3>
-          <a href="#">
-            <span>learn more</span>
-            <IconContext.Provider value={{ color: "14da8f", size: "18px" }}>
-              <IoChevronForward />
-            </IconContext.Provider>
-          </a>
+         
         </motion.div>
-        <motion.div className="card" variants={item}>
+        <motion.div className="col-md-6 col-sm-6 card" variants={item}>
           <motion.span
             className="service_icon"
             style={{ backgroundColor: "#dbf9ed" }}
@@ -207,12 +182,7 @@ function Card() {
             en tenant compte de la demande: comme la constriction
         de route du déserte agricole
           </h3>
-          <a href="#">
-            <span>learn more</span>
-            <IconContext.Provider value={{ color: "14da8f", size: "18px" }}>
-              <IoChevronForward />
-            </IconContext.Provider>
-          </a>
+        
         </motion.div>
         
         

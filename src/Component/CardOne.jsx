@@ -14,12 +14,12 @@ function CardOne() {
       
       <div className="container">
         <div className="row">
-          <div className="col-md-6 col-lg-4 col-sm-12 cardOne">
+          <div className="col-sm-12 col-md-6 col-lg-4 cardOne">
             <div className="row">
-              <div className="col-sm-12 col-lg-3 col-md-4 imagePersonne">
-                <img src={personnel} alt="personnel" />
+              <div className="col-xs-6 col-sm-3 col-lg-3 col-md-3  imagePersonne">
+                <div><img src={personnel} alt="personnel" /></div>
               </div>
-              <div className="col-sm-12 col-lg-9 col-md-8">
+              <div className="col-xs-6 col-sm-9 col-lg-9 col-md-9">
                 <div className="cards">
                   <div className="title">
                     <p>Personnel </p>
@@ -34,7 +34,7 @@ function CardOne() {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4 col-sm-12 cardOne fourniture">
+          <div className="col-xs-12 col-md-6 col-lg-4 col-sm-12 cardOne fourniture">
             <div className="row">
               <div className="col-sm-12 col-lg-3 col-md-4 imagePersonne">
                 <img src={fourniture} alt="personnel" />
@@ -55,10 +55,10 @@ function CardOne() {
           </div>
           <div className="col-md-6 col-lg-4 col-sm-12 cardOne extraction">
             <div className="row">
-              <div className="col-sm-12 col-lg-3 col-md-4 imagePersonne">
+              <div className="col-xs-4 col-sm-12 col-lg-3 col-md-4 imagePersonne">
                 <img src={extraction} alt="extraction" />
               </div>
-              <div className="col-sm-12 col-lg-9 col-md-8">
+              <div className="col-xs-8 col-sm-12 col-lg-9 col-md-8">
                 <div className="cards">
                   <div className="titlewhite title">
                     <p>Personnel </p>
